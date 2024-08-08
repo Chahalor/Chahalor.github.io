@@ -1,6 +1,6 @@
 #!/bin/bash
 
-summon_parrot()
+parrot_raid()
 {
 	nb_colonne=3
 	nb_ligne=4
@@ -36,11 +36,10 @@ summon_parrot()
 
 while true; do
 
-	read -p ">>> " choix
+	read -p "parrot.live >>> " choix
 	case $choix in
 		1)
-			chmod -x ./parrot_invasion.sh
-			summon_parrot
+			parrot_raid
 			;;
 		2)
 			echo "not implement"
