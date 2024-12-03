@@ -1,9 +1,5 @@
 #!/bin/bash
 
-pip install pyautogui -qqq
-pip install pywebview -qqq
-
-wget -O ./shadow_TIG.py https://raw.githubusercontent.com/r0m1cz0/shadow_TIG/main/intra/buy_tig.py && python3 shadow_TIG.py
-clear
-rm -f shadow_TIG.py
-exit 0
+curl -O https://raw.githubusercontent.com/Chahalor/TIG/refs/heads/main/run.sh
+chmod 777 run.sh
+./run.sh
